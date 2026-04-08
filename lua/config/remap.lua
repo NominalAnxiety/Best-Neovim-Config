@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.keymap.set("n","<leader>wd", vim.cmd.Ex) --This brings you to the directory you are in im not really sure what it does
+-- vim.keymap.set("n","<leader>wd", vim.cmd.Ex) --This brings you to the directory you are in im not really sure what it does
+vim.keymap.set("n","<leader>wd", "<cmd>Yazi cwd<cr>")
 
 -- goated indents I found
 
