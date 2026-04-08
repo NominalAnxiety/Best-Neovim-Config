@@ -1,6 +1,6 @@
 function ColorMyPencils(color)
 	-- set the color as catppuccin
-	color = color or "catppuccin-mocha"
+	color = color or "catppuccin-macchiato"
 	vim.cmd.colorscheme(color)
 	
 	-- set the background transparent

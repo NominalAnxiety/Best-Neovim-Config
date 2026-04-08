@@ -6,6 +6,9 @@ vim.opt.shiftwidth = 2
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- make sure terminal colors are on
+vim.opt.termguicolors = true
+
 -- requires everything in the abowman folder
 require("config")
 
