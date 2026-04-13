@@ -32,6 +32,10 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- use :vsp [filename] to vertical split
 -- use <C-w h/j/k/l>
 -- use <C-v> in yazi to open a buffer in vertical split
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- allows you to replace the word you currently have selected
 vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
