@@ -28,6 +28,11 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
+-- window navigation 
+-- use :vsp [filename] to vertical split
+-- use <C-w h/j/k/l>
+-- use <C-v> in yazi to open a buffer in vertical split
+
 -- allows you to replace the word you currently have selected
 vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 

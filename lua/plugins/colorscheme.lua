@@ -10,6 +10,7 @@ return {
 				transparent_background = true,
 				custom_highlights = {
 					NormalFloat = { bg = "none" },
+					FloatBorder = { bg = "none" },
 					TelescopeBorder = { bg = "none" }
 				}
 			})
