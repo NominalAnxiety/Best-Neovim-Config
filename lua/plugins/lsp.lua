@@ -8,7 +8,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
-				"pyright",
+				"pylsp",
 				"clangd",
 				"rust_analyzer",
 			},
