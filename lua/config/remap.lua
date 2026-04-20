@@ -12,6 +12,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- allows you to paste without replacing the buffer
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+-- formatting
+vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format)
+
 -- allows you to yank to computer clipboard
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")

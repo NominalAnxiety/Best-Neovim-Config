@@ -1,8 +1,4 @@
-local lspconfig = require("lspconfig")
-
--- lspconfig.ensure_installed({'stylua'})
-
--- keymaps (I don't think the autocmd is working)
+-- lsp commands
 vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(ev)
 		local opts = { buffer = ev.buf }
@@ -10,5 +6,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, opts)
 		vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 		vim.keymap.set({ 'n' }, '<leader>ca', vim.lsp.buf.code_action, opts)
+	end,
+})
+
+-- file preferences
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	callback = function()
+		vim.opt_local.formatoptions:remove({ "r", "o" }) -- no autocomment when pressing enter
 	end,
 })
