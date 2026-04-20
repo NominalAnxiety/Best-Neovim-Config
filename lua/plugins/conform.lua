@@ -6,9 +6,14 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				rust = { "rustfmt" },
-				c = { "clang_format" },
-				cpp = { "clang_format" },
+				c = { "clang-format" },
+				cpp = { "clang-format" },
 			},
+			formatters = {
+				["clang-format"] = {
+					prepend_args = { "--style=llvm" }, -- Forces Google style if no .clang-format file exists
+				},
+			}
 		},
 	},
 }
