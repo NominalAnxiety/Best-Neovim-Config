@@ -13,7 +13,7 @@ return {
 					TelescopeBorder = { bg = "none" }
 				}
 			})
-			vim.cmd.colorscheme "catppuccin"
+			vim.cmd.colorscheme "catppuccin-mocha"
 		end,
 	}
 }
