@@ -1,4 +1,1 @@
-
--- requires everything in the abowman folder
-require("config")
-
+/nix/store/zpilbnsv1d8rsxdifkarfzbhi08wyih5-home-manager-files/.config/nvim/init.lua

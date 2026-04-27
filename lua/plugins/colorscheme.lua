@@ -4,9 +4,8 @@ return {
 		name = "catppuccin",
 		priority = 1000,
 		config = function()
-			local catppuccin = require("catppuccin")
-			catppuccin.setup({
-				flavour = "macchiato",
+			require("catppuccin").setup({
+				flavour = "mocha",
 				transparent_background = true,
 				custom_highlights = {
 					NormalFloat = { bg = "none" },
@@ -14,6 +13,7 @@ return {
 					TelescopeBorder = { bg = "none" }
 				}
 			})
-		end
+			vim.cmd.colorscheme "catppuccin"
+		end,
 	}
 }
