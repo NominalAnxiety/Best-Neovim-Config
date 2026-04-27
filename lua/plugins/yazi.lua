@@ -1,30 +1,16 @@
 return {
 	{
 		"mikavilpas/yazi.nvim",
-		version = "*", -- use the latest stable version
+		version = "*",
 		event = "VeryLazy",
 		dependencies = {
 			{ "nvim-lua/plenary.nvim", lazy = true },
 		},
 		opts = {
-			floating_window = true,          -- keep float behavior
-			floating_window_winblend = 0,    -- 0 = no transparency
-			floating_window_border = "none", -- optional, remove border
-			highlight_normal = true,         -- use your normal buffer highlight
-		}
-		-- opts = {
-		-- 	-- if you want to open yazi instead of netrw, see below for more info
-		-- 	open_for_directories = true,
-		-- 	keymaps = {
-		-- 		show_help = "<f1>",
-		-- 	},
-		-- },
-		-- -- 👇 if you use `open_for_directories=true`, this is recommended
-		-- init = function()
-		-- 	-- mark netrw as loaded so it's not loaded at all.
-		-- 	--
-		-- 	-- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
-		-- 	vim.g.loaded_netrwPlugin = 1
-		-- end,
-	}
+			floating_window_border = "none",
+			floating_window_winblend = 0,
+			highlight_normal = true,
+			floating_window = true,
+		},
+	},
 }

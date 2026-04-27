@@ -13,6 +13,6 @@ return {
 			},
 			completion = { documentation = { auto_show = false } },
 		},
-		fuzzy = { implementation = "prefer_rust_with_warning" }
+		fuzzy = { implementation = "prefer_rust_with_warning" },
 	},
 }
