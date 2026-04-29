@@ -4,7 +4,7 @@ require("config.lazy")
 require("config.autocommands")
 
 
-local lsp_enabled = {"lua_ls", "pylsp", "clangd", "rust_analyzer"}
+local lsp_enabled = {"lua_ls", "pylsp", "clangd", "rust_analyzer", "nixd"}
 
 -- makes vim. global
 vim.lsp.config("lua_ls", {

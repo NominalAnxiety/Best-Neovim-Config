@@ -8,6 +8,7 @@ return {
 				rust = { "rustfmt" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				nix = { "alejandra" },
 			},
 			formatters = {
 				["clang-format"] = {
