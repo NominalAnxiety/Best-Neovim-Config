@@ -18,12 +18,12 @@ return {
 			require('mini.indentscope').setup({})
 		end,
 	},
-	-- {
-	-- 	'nvim-mini/mini.statusline',
-	-- 	version = '*',
-	-- 	config = function()
-	-- 		require('mini.statusline').setup({})
-	-- 	end,
-	-- },
+	{
+		'nvim-mini/mini.statusline',
+		version = '*',
+		config = function()
+			require('mini.statusline').setup({})
+		end,
+	},
 
 }

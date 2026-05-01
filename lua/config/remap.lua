@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
--- vim.keymap.set("n","<leader>wd", vim.cmd.Ex) --This brings you to the directory you are in im not really sure what it does
-vim.keymap.set("n","<leader>wd", "<cmd>Yazi cwd<cr>")
+vim.keymap.set("n","<leader>wd", vim.cmd.Ex)
 
 -- goated indents I found
 
@@ -31,10 +30,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
--- window navigation 
--- use :vsp [filename] to vertical split
--- use <C-w h/j/k/l>
--- use <C-v> in yazi to open a buffer in vertical split
+-- buffer navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
