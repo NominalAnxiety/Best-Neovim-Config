@@ -1,5 +1,5 @@
 
-local indent = 8
+local indent = 4
 
 -- set the tabstop
 vim.opt.tabstop = indent
