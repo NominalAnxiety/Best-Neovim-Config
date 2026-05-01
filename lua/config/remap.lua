@@ -2,7 +2,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.keymap.set("n","<leader>wd", vim.cmd.Ex)
 
--- goated indents I found
+-- add jj to be escape when in insert mode
+vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })
 
 -- this allows for you to move highlighted text (it auto indents)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

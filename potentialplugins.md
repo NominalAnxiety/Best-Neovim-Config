@@ -1,16 +1,16 @@
 
 # Future Plugins (maybe)
 
-## flash.nvim
+## flash.nvim DONE
 flash.nvim allows you to have more precise control over how you move around in your neovim
 - [this video](https://www.youtube.com/watch?v=rdFaTJPHQwg) shows a demo of how it works
 - [flash.nvim](https://github.com/folke/flash.nvim) is the link to the github page
 
-## trouble.nvim
+## trouble.nvim DONE
 trouble.nvim is a pretty way of showing errors and helping you solve these errors
 - [trouble.nvim](https://github.com/folke/trouble.nvim) this is the link to the github page
 
-## mini.ai
+## mini.ai DONE
 mini.ai allows you to extend a and i so if I am nested parenthese (()) I can do i( again and go to the outer ones
 - [mini.ai](https://github.com/nvim-mini/mini.ai) this is the link to the github page
 
@@ -27,10 +27,10 @@ this is purely for ricing but it could also allow me to get to my nvim config ea
 a tree structure at the side of the screen similar to vscode. I am not sure if it is optimal but it definetely could be good to do
 - [neo_tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 
-## lualine.nvim
+## lualine.nvim DOING MINI.STATUSLINE
 I removed lualine because it wasn't following transparency of nvim. I do like having a shnazzy statusline so I might program my own.
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- can also do the mini statusline
+- can also do the mini statusline 
 
 ## luasnip
 luasnip will allow me to generate code snippets which could speed up development. I am unsure if I like it however becaue it is a little bit destracting
