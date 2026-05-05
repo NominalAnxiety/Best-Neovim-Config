@@ -1,19 +1,6 @@
 
 # Future Plugins (maybe)
 
-## flash.nvim DONE
-flash.nvim allows you to have more precise control over how you move around in your neovim
-- [this video](https://www.youtube.com/watch?v=rdFaTJPHQwg) shows a demo of how it works
-- [flash.nvim](https://github.com/folke/flash.nvim) is the link to the github page
-
-## trouble.nvim DONE
-trouble.nvim is a pretty way of showing errors and helping you solve these errors
-- [trouble.nvim](https://github.com/folke/trouble.nvim) this is the link to the github page
-
-## mini.ai DONE
-mini.ai allows you to extend a and i so if I am nested parenthese (()) I can do i( again and go to the outer ones
-- [mini.ai](https://github.com/nvim-mini/mini.ai) this is the link to the github page
-
 ## aerial.nvim or outline.nvim
 these plugins allow for you to skin through code via the functions in your code which is pretty cool
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim)
@@ -27,28 +14,22 @@ this is purely for ricing but it could also allow me to get to my nvim config ea
 a tree structure at the side of the screen similar to vscode. I am not sure if it is optimal but it definetely could be good to do
 - [neo_tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 
-## lualine.nvim DOING MINI.STATUSLINE
-I removed lualine because it wasn't following transparency of nvim. I do like having a shnazzy statusline so I might program my own.
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- can also do the mini statusline 
-
 ## luasnip
 luasnip will allow me to generate code snippets which could speed up development. I am unsure if I like it however becaue it is a little bit destracting
 - [luasnip](https://github.com/L3MON4D3/LuaSnip)
-
-## which-key.nvim
-if my config grows enough and I have enough plugins then I potentially should add which-key to help me remember all of them.
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## todo-comments.nvim
 this is just a QOL change that will make TODO look very bold and noticeable 
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 
+## neogen.nvim
+this is a tool that allows you to easily generate code documentation based off of the language servers normal protocol
+- [neogen.nvim](https://github.com/danymat/neogen)
+
 ## other thoughts on plugins
 I don't think i should necessarily go insane on all the plugins. this is because I have to learn them all. One thing I think could be good is more git integration (even though I already have fugitive) if there was ever a git diff problem in the past I would always go to vscode to solve that which I really shouldn't so yeah
-
-
-# I think I will remove yazi.nvim
+- [zellij-nav.nvim](https://github.com/swaits/zellij-nav.nvim)
+- [fast-cursor-move.nvim](https://github.com/xiyaowong/fast-cursor-move.nvim)
 
 # Problems to solve
 ### Editing problems
@@ -65,6 +46,9 @@ TL;DR
 - bad at directory navigation. Should improve netrw and allow for opening in side and in main buffer (should replace yazi)
 - I want to delete yazi
 - I need better lsp integration 
+
+#### update 5/4/26
+I currently have added oil.nvim, neogit, and gitsigns. for file navigation I am going to be using oil and telescope. I will setup zellij to instantiate projects and pair it with my neovim in order to really start coding. I need to learn and get better at using the git integration within neovim, oil and telescope. I am not used to using telescope at all and I should work on that. I currently don't have anything that will display a file tree. I am thinking of adding something that will do that but I am not quite sure. I think that either aerial or outline.nvim is a good idea because it will allow me to better do my things
 
 **IMPORTANT** I already have a lot of good tools in order to navigate through files and everything. I should learn how to use them.
 
