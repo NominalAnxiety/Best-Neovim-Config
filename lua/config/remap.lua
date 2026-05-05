@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.keymap.set("n","<leader>wd", vim.cmd.Ex)
 
 -- add jj to be escape when in insert mode
 vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })
