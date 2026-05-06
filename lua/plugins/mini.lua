@@ -4,7 +4,7 @@ return {
 		config = function()
 			require("mini.ai").setup()
 			require("mini.pairs").setup()
-			-- require("mini.statusline").setup()
+			require("mini.statusline").setup()
 			require("mini.icons").setup()
 			-- require("mini.indentscope").setup()
 		end,
