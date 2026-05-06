@@ -6,7 +6,9 @@ return {
 		config = function()
 			require("catppuccin").setup({
 				flavour = "mocha",
-				transparent_background = true,
+				telescope = {
+					enable = true;
+				}
 			})
 			vim.cmd.colorscheme("catppuccin")
 		end,
