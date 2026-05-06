@@ -40,6 +40,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 		vim.api.nvim_set_hl(0, "TelescopePromptTitle",  { bg = "none" })
 		vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "none" })
 		vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TelescopeBorder",       { bg = "none" })
 	end,
 })
 
