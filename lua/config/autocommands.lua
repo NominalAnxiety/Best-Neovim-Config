@@ -24,14 +24,18 @@ vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldenable = false
 
 -- file preferences
-vim.api.nvim_create_autocmd({ "FileType", "BufReadPost" }, {
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("TreesitterIndent", { clear = true }),
   callback = function()
-    vim.opt_local.formatoptions:remove({ "r", "o" }) -- no autocomment going to a newline
-    -- [[-------------------make treesitter start after buffer is read--------------------]]
-    pcall(vim.treesitter.start) 
-    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-    -- [[---------------------------------------------------------------------------------]]
+    vim.opt_local.formatoptions:remove({ "r", "o" })
   end,
+})
+
+-- treesitter highlighting (needs buffer content to exist)
+vim.api.nvim_create_autocmd({ "FileType", "BufReadPost" }, {
+	callback = function()
+		pcall(vim.treesitter.start)
+	end,
 })
 
 -- note init callbacks are a thing and I should probably learn them

@@ -12,3 +12,6 @@ vim.opt.relativenumber = true
 -- make sure terminal colors are on
 vim.opt.termguicolors = true
 
+-- indent
+vim.opt.autoindent = true
+vim.opt.smartindent = false
