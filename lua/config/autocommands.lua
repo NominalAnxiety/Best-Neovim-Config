@@ -1,3 +1,4 @@
+
 -- lsp commands
 vim.api.nvim_create_autocmd("LspAttach", {
 	-- group = vim.api.nvim_create_augroup("LspKeybinds", { clear = true }),
@@ -16,13 +17,24 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+
+-- treesitter related
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldenable = false
+
 -- file preferences
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "*",
-	callback = function()
-		vim.opt_local.formatoptions:remove({ "r", "o" }) -- no autocomment when pressing enter
-	end,
+vim.api.nvim_create_autocmd({ "FileType", "BufReadPost" }, {
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "r", "o" }) -- no autocomment going to a newline
+    -- [[-------------------make treesitter start after buffer is read--------------------]]
+    pcall(vim.treesitter.start) 
+    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    -- [[---------------------------------------------------------------------------------]]
+  end,
 })
+
+-- note init callbacks are a thing and I should probably learn them
 
 -- catppuccin make transparent autocommand
 -- vim.api.nvim_create_autocmd("ColorScheme", {
@@ -52,3 +64,5 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.relativenumber = true
 	end,
 })
+
+

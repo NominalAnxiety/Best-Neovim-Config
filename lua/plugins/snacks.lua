@@ -20,6 +20,7 @@ return {
 			-- scroll = { enabled = true }, -- this animates when I do control d
 			statuscolumn = { enabled = true },
 			words = { enabled = true },
+			util = { enabled = true },
 			-- terminal = { enabled = true } -- was hard to toggle off
 		},
 		keys = {
