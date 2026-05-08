@@ -7,5 +7,18 @@ return {
 		---@module 'render-markdown'
 		---@type render.md.UserConfig
 		opts = {},
+		config = function()
+			require("render-markdown").setup({
+				file_types = { "markdown" },
+				render_modes = { "n", "c" },
+				-- Only attach to normal file buffers
+				on = {
+					attach = function(bufnr)
+						local buftype = vim.api.nvim_get_option_value("buftype", { buf = bufnr })
+						return buftype == ""
+					end
+				}
+			})
+		end
 	}
 }
