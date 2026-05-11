@@ -29,7 +29,7 @@ this is a tool that allows you to easily generate code documentation based off o
 ## other thoughts on plugins
 I don't think i should necessarily go insane on all the plugins. this is because I have to learn them all. One thing I think could be good is more git integration (even though I already have fugitive) if there was ever a git diff problem in the past I would always go to vscode to solve that which I really shouldn't so yeah
 - [zellij-nav.nvim](https://github.com/swaits/zellij-nav.nvim)
-- [fast-cursor-move.nvim](https://github.com/xiyaowong/fast-cursor-move.nvim)
+- [neolij](https://github.com/y2w8/neolij.nvim) then should also have a plugin for zellij to be compatible with this
 
 # Problems to solve
 ### Editing problems
