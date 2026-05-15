@@ -20,7 +20,7 @@ return {
 			require("gitsigns").setup({})
 
 			-- keymaps
-			vim.keymap.set('n', '<leader>hp', ":Gitsigns preview_hunk<CR>", {})
+			vim.keymap.set('n', '<leader>ghp', ":Gitsigns preview_hunk<CR>", {})
 		end
 	}
 }
