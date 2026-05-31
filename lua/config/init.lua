@@ -3,8 +3,8 @@ require("config.options")
 require("config.lazy")
 require("config.autocommands")
 
-
-local lsp_enabled = {"lua_ls", "ruff", "clangd", "rust_analyzer", "nixd", "marksman"}
+-- rust analyzer setup by rust plugin in lsp.lua
+local lsp_enabled = {"lua_ls", "ruff", "rust-analyzer", "clangd", "nixd", "marksman"}
 
 -- makes vim. global
 vim.lsp.config("lua_ls", {

@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- intrabuffer settings
-vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })
+vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
